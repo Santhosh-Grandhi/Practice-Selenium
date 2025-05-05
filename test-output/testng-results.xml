@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-21T20:53:42 IST" name="Default suite" finished-at="2025-04-21T20:54:00 IST" duration-ms="18045">
+    <groups>
+    </groups>
+    <test started-at="2025-04-21T20:53:42 IST" name="Default test" finished-at="2025-04-21T20:54:00 IST" duration-ms="18045">
+      <class name="GreenCartFramework.StandAlone.StandAloneTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:GreenCartFramework.StandAlone.StandAloneTest@7c9d8e2]" started-at="2025-04-21T20:53:42 IST" name="LaunchApplication" finished-at="2025-04-21T20:53:52 IST" duration-ms="9676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="TenderOrder()[pri:0, instance:GreenCartFramework.StandAlone.StandAloneTest@7c9d8e2]" started-at="2025-04-21T20:53:52 IST" name="TenderOrder" finished-at="2025-04-21T20:54:00 IST" duration-ms="8303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TenderOrder -->
+      </class> <!-- GreenCartFramework.StandAlone.StandAloneTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
