@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
@@ -16,6 +17,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import GreenCartFramework.PageObjects.CartPage;
@@ -43,5 +45,13 @@ public class StandAloneTest extends BaseTest {
 		orderConfirmation.selectCountry("India");
 		Boolean orderConfirmationText = orderConfirmation.submitOrder();
 		Assert.assertTrue(orderConfirmationText);
+	}
+	
+	@DataProvider
+	public Object[][] InputData() throws IOException
+	{
+		List<HashMap<String, String>> jsonData = getJsonData();
+		return new Object[][] {{jsonData.get(0)},{jsonData.get(1)}};
+		
 	}
 }

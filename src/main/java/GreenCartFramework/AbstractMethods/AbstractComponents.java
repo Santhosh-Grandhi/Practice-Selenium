@@ -36,9 +36,4 @@ public class AbstractComponents {
 
 	}
 	
-	public void goTo(String url)
-	{
-		driver.get(url);
-	}
-
 }
